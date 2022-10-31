@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+
+    <com.example.praktica3gritsakovichandrey493.GraphView
+        android:id="@+id/graphView2"
+        android:layout_width="374dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="51dp"
+        android:layout_height="397dp"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/imageButtonAdd"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:onClick="onAddClick"
+            app:srcCompat="@drawable/icon1" />
+
+        <ImageButton
+            android:id="@+id/imageButtonRemove"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:onClick="onRemoveClick"
+            app:srcCompat="@drawable/iccon2" />
+
+        <ImageButton
+            android:id="@+id/imageButtonAddLine"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:onClick="onLinkClick"
+            app:srcCompat="@drawable/icon3" />
+
+        <ImageButton
+            android:id="@+id/imageButtonRemoveLine"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:onClick="onRemoveLink"
+            app:srcCompat="@drawable/icon4" />
+
+        <ImageButton
+            android:id="@+id/imageButtonTextRedactor"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:onClick="addText"
+            app:srcCompat="@drawable/text" />
+
+        <ImageButton
+            android:id="@+id/imageButtonTextRedactorLink"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:onClick="addTextLink"
+            app:srcCompat="@drawable/icon5" />
+
+        <ImageButton
+            android:id="@+id/imageButtonCopy"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:onClick="copyNode"
+            app:srcCompat="@drawable/icon6" />
+
+        <ImageButton
+            android:id="@+id/imageButtonDateBase"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:onClick="DataBase"
+            app:srcCompat="@drawable/database" />
+
+    </LinearLayout>
+
+</LinearLayout>
